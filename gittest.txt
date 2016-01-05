@@ -1,5 +1,6 @@
-Test rename
-
 before
 
 git test
+
+
+line from new_feature
