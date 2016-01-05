@@ -1,0 +1,5 @@
+Test rename
+
+before
+
+git test
