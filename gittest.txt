@@ -3,3 +3,7 @@ Test rename
 before
 
 git test
+
+blah
+
+line from master
