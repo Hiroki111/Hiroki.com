@@ -1,0 +1,30 @@
+#header_image{
+    background-image: url("../globe_cut.jpg");
+    height:280px;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+#header_title{
+    font-size: 450%;
+    font-family: Impact, fantasy;
+
+    color: white;
+    text-align: center;
+    text-shadow:
+            3px 3px 0 #000,
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px  1px 0 #000,
+            1px  1px 0 #000;
+    position:absolute;
+    width:100%;
+    bottom: 20%;
+}
+
+body {
+    margin: 0;
+
+}
