@@ -26,5 +26,77 @@
 
 body {
     margin: 0;
+}
 
+/*1st level*/
+nav ul{
+    font-family: Impact, Charcoal, sans-serif;
+    font-size:20px;
+    background-color:#c7ddef;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+/*This comes from http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu
+but why does "after" exactly mean?
+*/
+nav ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*1st level items*/
+nav ul li {
+    /*padding: 5px 10px 5px 10px;*/
+    float: left;
+}
+
+/*This comes from http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu
+ why is the difference between "ul li" and  "ul li a"?
+*/
+nav ul li a {
+    display: block; padding: 5px 20px;
+    color: white;
+    text-shadow:
+            3px 3px 0 #000,
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px  1px 0 #000,
+            1px  1px 0 #000;}
+
+/*2nd level list*/
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    padding: 0;
+    width: 150px;
+}
+
+nav ul li:hover {
+    background-color: #4cae4c;
+    display: block;
+}
+
+/*The 2nd level will appear*/
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul ul li{
+    float: none;
+    position:relative;
+    text-align: left;
+
+}
+
+nav ul ul li a:hover {
+    background: #5cb85c;
 }
