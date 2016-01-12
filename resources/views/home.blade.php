@@ -11,6 +11,7 @@
 @endsection
 
 @section('content')
-    <p>This is my body content.</p>
+    <h2>TEST!</h2>
+    
 @endsection
 -->

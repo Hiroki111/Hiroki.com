@@ -24,7 +24,7 @@
             </ul>
         </nav>
     </header>
-   <div class = sidebar>
+   <div id = sidebar>
         <ul id = sidebar_genre>
             <li><a href="#">Genre</a></li>
         </ul>
@@ -35,12 +35,12 @@
            <li><a href="#">Links</a></li>
        </ul>
    </div>
-    <div class="container">
+    <div id="container">
         @yield('content')
     </div>
 
-    <footer>
+    <div id = footer>
         <p>Hiroki.com - Established in 2016</p>
-    </footer>
+    </div>
     </body>
 </html>
