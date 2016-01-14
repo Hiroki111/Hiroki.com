@@ -29,6 +29,10 @@ body {
     margin: 0;
 }
 
+p{
+    font-size: 110%;
+}
+
 /*1st level*/
 nav ul{
     font-family: Impact, Charcoal, sans-serif;
@@ -130,8 +134,8 @@ ul li a{
 }
 
 #container{
-    padding-top: 40px;
-    padding-left: 5%;
+
+    padding: 40px 35% 5% 15%;
 }
 
 /* http://www.lwis.net/journal/2008/02/08/pure-css-sticky-footer/ */

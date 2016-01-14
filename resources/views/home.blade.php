@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
-<!--
-@section('title', 'Home - test')
+
+@section('title', 'Hiroki.com')
 
 
 @section('sidebar')
@@ -11,7 +11,8 @@
 @endsection
 
 @section('content')
-    <h2>TEST!</h2>
-    
+    <h1>Hiroki.com</h1>
+    <p>This is used for practicing Laravel 5</p>
+    <!-- access DB, get article objects, show them in a for loop -->
+
 @endsection
--->

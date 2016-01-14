@@ -1,0 +1,28 @@
+body{
+    margin:0;
+}
+
+p{
+    font-size: 110%;
+}
+
+header{
+    background-image: url("../globe_cut.jpg");
+    height:100px;
+    color: white;
+    font-size: 200%;
+    padding-left: 5%;
+    bottom: 20%;
+
+}
+
+#content{
+    float: top;
+    padding: 40px 35% 5% 15%;
+    border: #0c0c0c;
+}
+
+#result{
+    float: right;
+    float: top;
+}

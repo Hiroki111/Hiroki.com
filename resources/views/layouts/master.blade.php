@@ -1,8 +1,7 @@
 <html>
     <head>
-        <title>@yield('Hiroki.com')</title>
+        <title>@yield('title')</title>
         <link href="{{asset('css/main.css')}}" rel="stylesheet">
-
     </head>
     <body>
     <header>
@@ -11,14 +10,14 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href={{url('')}}>Home</a></li>
                 <li  class = has_sub><a href="#">Travel Tips</a>
                     <ul>
                         <li><a href='#'>Tip 1</a></li>
                         <li class='last'><a href='#'>Tip 2</a></li>
                     </ul>
                 </li>
-                <li><a href="#">About</a></li>
+                <li><a href={{url('about')}}>About</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Links</a></li>
             </ul>

@@ -13,7 +13,12 @@
 
 Route::get('/', function () {
     return view('home');
-    //return view('welcome');
+});
+
+Route::get('/about', 'PagesController@about');
+
+Route::get('/post_article', function () {
+    return view('edit_pages/post_article');
 });
 
 /*
@@ -30,3 +35,5 @@ Route::get('/', function () {
 Route::group(['middleware' => ['web']], function () {
     //
 });
+
+?>
