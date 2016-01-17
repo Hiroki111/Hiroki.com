@@ -17,9 +17,45 @@ Route::get('/', function () {
 
 Route::get('/about', 'PagesController@about');
 
-Route::get('/post_article', function () {
+Route::get('/post_article', 'PagesController@post_article');
+
+Route::post('/post_article',  function () {
     return view('edit_pages/post_article');
 });
+
+Route::get('/insert', function() {
+    App\Category::create(array('name' => 'Music'));
+    return 'category added';
+});
+
+Route::get('/insert', function() {
+    App\Category::create(array('title' => 'HIROKI'));
+    return 'category added';
+});
+
+Route::get('/read', function() {
+    $category = new App\Category();
+    
+    $data = $category->all(array('title','id'));
+
+    foreach ($data as $list) {
+        echo $list->id . ' ' . $list->title . ' ';
+    }
+});
+
+Route::get('/update', function() {
+    $category = App\Category::find(1);
+    $category->title = 'HEAVY METAL';
+    $category->save();
+    
+    $data = $category->all(array('title','id'));
+
+    foreach ($data as $list) {
+        echo $list->id . ' ' . $list->title . '
+';
+    }
+});
+
 
 /*
 |--------------------------------------------------------------------------

@@ -2,9 +2,10 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+class Category extends BaseModel {
 
-class Category extends Model
-{
+    protected $primaryKey = 'id';
+    protected $table = 'articles';
+    protected $fillable = array('title', 'contents', 'genre', 'created_at_ip', 'updated_at_ip');
     //
 }

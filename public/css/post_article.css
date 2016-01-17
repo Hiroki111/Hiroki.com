@@ -24,7 +24,7 @@ body{
     min-height: 100%;
 }
 
-#content{
+#draft{
     float: left;
     width: 40%;
     padding:5%;
@@ -51,7 +51,7 @@ footer{
 }*/
 
 html, body { height: 100%; }
-body > #content { height: auto; min-height: 100%; }
+body > #draft { height: auto; min-height: 100%; }
 footer {
     clear: both;
     position: relative;
