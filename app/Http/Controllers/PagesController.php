@@ -26,5 +26,9 @@ class PagesController extends Controller {
           //Key (left side) will be the variable's name
           ]); 
     }
+    
+    public function create(){
+        
+    }
 
 }
